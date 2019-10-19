@@ -14,9 +14,9 @@ fi
 NAME=$1
 
 #MQTT without auth
-RESULT=`/usr/bin/mosquitto_sub -h MOSQUITTOSERVER -t "your/specific/topic/${NAME}" -C 1`
+RESULT=`/usr/bin/mosquitto_sub -h MQTTSERVER -t "your/specific/topic/${NAME}" -C 1`
 #MQTT With auth:
-#RESULT=`/usr/bin/mosquitto_sub -h MOSQUITTOSERVER -u USER -P "PASSWORD" -t "your/specific/topic/${NAME}" -C 1`
+#RESULT=`/usr/bin/mosquitto_sub -h MQTTSERVER -u USER -P "PASSWORD" -t "your/specific/topic/${NAME}" -C 1`
 #RESULT='1'
 #echo "${RESULT}"
 if [ "${RESULT}" == "1" ]; then
