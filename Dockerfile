@@ -1,4 +1,4 @@
-FROM alpine:3.9
+FROM alpine:3.9.4
 LABEL maintainer="jorin.laatsch@gmail.com"
 
 RUN echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
